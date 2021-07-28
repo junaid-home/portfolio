@@ -1,0 +1,87 @@
+@import "../variables.scss";
+
+.resume-pdf {
+  background: $secondary-background-color;
+  height: fit-content;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  .pdf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1000px) {
+      transform: scale(0.8);
+      margin-top: 0;
+    }
+  }
+}
+
+.custom-class-name-1 {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 5rem;
+  }
+}
+
+.info-section {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  p {
+    font-size: 2rem;
+    color: $light-gray-color;
+    text-shadow: $primary-text-shadow;
+  }
+}
+
+.buttons-contiainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
+
+  &:last-child {
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-contiainer {
+    flex-direction: column;
+
+    button {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .info-section {
+    margin: 4rem 0;
+  }
+
+  .react-pdf__Page__canvas {
+    width: 95vw !important;
+  }
+}
+
+.react-pdf__message {
+  font-size: 6rem;
+  color: $light-gray-color;
+  text-shadow: 0 2px 5px rgba(0, 0, 0.45);
+}
+
+.react-pdf__message--error {
+  color: red;
+}

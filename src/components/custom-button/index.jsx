@@ -1,0 +1,63 @@
+const CustomButton = ({
+  text,
+  center,
+  eye,
+  code,
+  isLink,
+  LinkTo,
+  margin,
+  onClick = () => {},
+  ...otherProps
+}) => {
+  const classes = center
+    ? `custom-button center ${margin ? "side-margin" : ""}`
+    : `custom-button ${margin ? "side-margin" : ""}`;
+
+  return isLink ? (
+    <a
+      className="link-to-project"
+      rel="noreferrer"
+      href={`${LinkTo}`}
+      target="_blank"
+      onClick={onClick}
+    >
+      <button className={classes} {...otherProps}>
+        {eye && (
+          <img
+            src="/assets/icons/eyeIcon.svg"
+            className="eye-icon"
+            alt="Eye Icon"
+          />
+        )}
+        {code && (
+          <img
+            src="/assets/icons/CodeIcon.svg"
+            className="code-icon"
+            alt="Code Icon"
+          />
+        )}
+        {text}
+      </button>
+    </a>
+  ) : (
+    <button onClick={onClick} className={classes} {...otherProps}>
+      {eye && (
+        <img
+          src="/assets/icons/eyeIcon.svg"
+          className="eye-icon"
+          alt="Eye Icon"
+        />
+      )}
+      {code && (
+        <img
+          src="/assets/icons/CodeIcon.svg"
+          className="code-icon"
+          alt="Code Icon"
+        />
+      )}
+      {text}
+    </button>
+  );
+};
+
+export default CustomButton;

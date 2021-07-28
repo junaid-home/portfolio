@@ -1,0 +1,140 @@
+@import "../variables.scss";
+
+.hero-component {
+  height: 100vh;
+  background: $primary-radial-gradient;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  .hero-section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, minmax(300px, 1fr));
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+      grid-template-rows: repeat(2, minmax(300px, 1fr));
+    }
+
+    .hero-image-container {
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .hero-image {
+        object-fit: contain;
+        height: 100%;
+        z-index: -1;
+        margin-bottom: 10rem;
+
+        @media screen and (max-width: 768px) {
+          height: 150%;
+        }
+      }
+    }
+    .content-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding-left: calc((100vw - 1200px) / 2);
+      align-items: center;
+      @media screen and (max-width: 1200px) {
+        margin-left: 10rem;
+      }
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+        margin-left: 0rem;
+      }
+      .content {
+        z-index: 1;
+        max-width: fit-content;
+        margin-bottom: 15rem;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .p-hello {
+          font-size: 3.5rem;
+          color: $secondary-text-color;
+          text-shadow: $primary-text-shadow;
+          margin-bottom: 2rem;
+          @media screen and (max-width: 1220px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 4rem;
+          }
+        }
+        .p-front {
+          font-size: 3.5rem;
+          color: $secondary-text-color;
+          text-shadow: $primary-text-shadow;
+          margin-bottom: 5rem;
+          @media screen and (max-width: 1220px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 4rem;
+          }
+        }
+        h1 {
+          font-size: 8rem;
+          color: $primary-text-color;
+          text-shadow: $primary-text-shadow;
+          @media screen and (max-width: 1220px) {
+            font-size: 6rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 8rem;
+          }
+
+          &.big {
+            font-size: 12rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+            @media screen and (max-width: 1220px) {
+              font-size: 9rem;
+            }
+            @media screen and (max-width: 768px) {
+              font-size: 12rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fixed-links {
+    position: fixed;
+    top: 40%;
+    left: -9.5rem;
+    z-index: 2000;
+    .links-box {
+      position: relative;
+      z-index: 100;
+    }
+  }
+}
+
+.hero-section-button {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: rgb(112, 98, 98);
+  color: #fff;
+  border: 1px solid #ddd;
+  padding: 7px 9.5px;
+  border-radius: 3.46px;
+  letter-spacing: 1.5px;
+}

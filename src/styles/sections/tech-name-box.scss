@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.tech-name-box {
+  padding: 1rem 1.5rem;
+  color: $primary-text-color;
+  width: fit-content;
+  font-size: 1.7rem;
+  text-shadow: $primary-text-shadow;
+  background-color: $light-gray-color;
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

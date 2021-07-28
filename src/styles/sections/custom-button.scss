@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.custom-button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: $primary-text-color;
+  letter-spacing: 1.3px;
+  border: 3px solid $primary-text-color;
+  background: $primary-background-color;
+  margin-top: 1rem;
+  transition: all ease-in 0.2s;
+  box-shadow: 2px 5px 10px 3px #000000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  a {
+    color: inherit;
+    text-decoration: line-through;
+  }
+
+  &:hover,
+  &:active {
+    color: rgb(32, 32, 32);
+    background: $primary-text-color;
+    border: 3px solid rgb(12, 12, 12);
+    box-shadow: 2px 7px 12px 5px #000000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:focus {
+    box-shadow: 2px 7px 12px 5px #000000;
+    outline: none;
+  }
+
+  .eye-icon {
+    height: 2.5rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+  .code-icon {
+    height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+}
+
+.link-to-project {
+  text-decoration: none;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.side-margin {
+  margin: 0 1rem;
+}

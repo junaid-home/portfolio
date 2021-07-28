@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.circle-container {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+
+  .circle {
+    display: inline-block;
+    background-color: none;
+    height: 99%;
+    width: 99%;
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.7));
+  }
+
+  .icon-inside {
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.7));
+  }
+  p {
+    font-size: 2rem;
+    color: $primary-text-color;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}

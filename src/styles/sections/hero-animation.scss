@@ -1,0 +1,60 @@
+.wave-svg-hero-section-primary {
+  height: 85vh;
+  width: 120vw;
+  position: absolute;
+  top: -1rem;
+  right: -15rem;
+  opacity: 0.8;
+  z-index: 0;
+
+  @media screen and (max-width: 1200px) {
+    transform: skewY(-10deg);
+  }
+  @media screen and (max-width: 900px) {
+    transform: skewY(-15deg);
+  }
+  @media screen and (max-width: 850px) {
+    transform: skewY(-20deg);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.wave-svg-hero-section-secondary {
+  width: 50vw;
+  position: absolute;
+  top: -28rem;
+  left: -5rem;
+  opacity: 0.8;
+  @media screen and (max-width: 1000px) {
+    top: -40rem;
+  }
+  @media screen and (max-width: 768px) {
+    top: -53rem;
+  }
+  @media screen and (max-width: 600px) {
+    top: -62rem;
+  }
+  @media screen and (max-width: 400px) {
+    top: -78rem;
+  }
+}
+
+.wave-svg-hero-section-mobile {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    top: 27rem;
+    left: -2rem;
+    width: 110vw;
+    height: 50vh;
+    z-index: 2;
+  }
+  @media screen and (max-height: 500px) {
+    display: none;
+  }
+}

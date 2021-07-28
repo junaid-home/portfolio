@@ -1,0 +1,15 @@
+export { default as SectionWave } from "./section-wave";
+export { default as AboutMeSection } from "./about-me";
+export { default as ProjectsSection } from "./projects-section";
+export { default as HeroSection } from "./hero-section";
+export { default as ContactSection } from "./contact-section";
+export { default as Header } from "./header";
+export { default as Footer } from "./footer";
+export { default as CustomButton } from "./custom-button";
+export { default as BurgerMenuButton } from "./burger-menu-button";
+export { default as GithubLink } from "./github-link";
+export { default as LinkedInLink } from "./linkedin-link";
+export { default as ResumeLink } from "./resume-link";
+export { default as NavLink } from "./navlink";
+export { default as ProfficientWithArrow } from "./profficient-with-arrow";
+export { default as TechNameBox } from "./tech-name-box";

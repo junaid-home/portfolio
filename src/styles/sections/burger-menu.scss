@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.burger {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 3px solid $secondary-text-color;
+  border-radius: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+
+  .open:first-child {
+    transform: rotate(135deg) translate(4px, -4px);
+  }
+  .open:nth-child(2) {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  .open:nth-child(3) {
+    transform: rotate(-135deg) translate(3.5px, 4.5px);
+  }
+  .close:first-child {
+    transform: rotate(0) translateY(0);
+  }
+  .close:nth-child(2) {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .close:nth-child(3) {
+    transform: rotate(0) translateY(0);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+
+  .burger-span {
+    width: 100%;
+    height: 1.5px;
+    border-radius: 5px;
+    background-color: $primary-text-color;
+    transition: all 0.3s ease-in;
+    margin: 2px 0;
+  }
+}

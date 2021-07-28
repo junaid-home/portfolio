@@ -1,0 +1,79 @@
+@import "../variables.scss";
+
+.projects-section {
+  height: max-content;
+  padding: 5rem calc((100vw - 1200px) / 2) 35rem;
+  background-color: $primary-background-color;
+  position: relative;
+
+  @media screen and (max-width: 1220px) {
+    padding: 0 10rem 30rem 10rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    color: $primary-text-color;
+    text-shadow: $primary-text-shadow;
+    margin-bottom: 1rem;
+
+    span {
+      color: $secondary-text-color;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    color: $light-gray-color;
+    text-shadow: $primary-text-shadow;
+  }
+
+  .grid-container {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 35rem 35rem 35rem;
+    grid-template-rows: 35rem 35rem;
+    gap: 3rem 3rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      // grid-template-rows: repeat(6, 30rem);
+      grid-template-rows: repeat(4, 35rem);
+      width: 90%;
+    }
+
+    .project-small-layout {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 5px black;
+      .preview-title {
+        font-size: 3rem;
+        padding: 0.5rem 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+    }
+    .codepad-img {
+      background-image: url("/assets/codepad.png");
+    }
+    .codepad-img-light {
+      background-image: url("/assets/codepad-light.png");
+    }
+  }
+}

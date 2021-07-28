@@ -1,0 +1,65 @@
+@import "../variables.scss";
+.github-link-wrapper {
+  text-decoration: none;
+  color: $primary-text-color;
+
+  .github-link-container {
+    width: 15rem;
+    height: 6rem;
+    padding: 0 1rem;
+    background-color: #222326;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in;
+
+    @media screen and (max-width: 1000px) {
+      width: 16rem;
+      height: 7rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 18rem;
+      height: 9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 19rem;
+      height: 10rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 21rem;
+      height: 13rem;
+    }
+
+    .github-link-content {
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    .github-logo {
+      height: 3rem;
+      width: 3rem;
+      @media screen and (max-width: 1000px) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      @media screen and (max-width: 400px) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  .hover-right {
+    &:hover {
+      transform: translateX(9.5rem);
+    }
+  }
+}
