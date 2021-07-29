@@ -41,10 +41,10 @@ function Project({
             animate="visible"
             exit="hidden"
           >
-            <img className="screenshot" src={imageLink} alt="project image" />
+            <img className="screenshot lazyload" src={imageLink} alt="project image" />
             <div className="details">
               <div className="x-button" onClick={() => setProject(false)}>
-                <img src="/assets/icons/xIcon.svg" alt="exit icon" />
+                <img className="lazyload" src="/assets/icons/xIcon.svg" alt="exit icon" />
               </div>
               <h2 className="project-title">
                 <span>{title[0]}</span>

@@ -17,12 +17,13 @@ class MyDocument extends Document {
           />
 
           <meta property="og:title" content="Junaid Javed Portfolio" />
-          <meta property="og:image" content="/assets/screenshot.png" />
+          <meta property="og:image" content="https://junaid-home.github.io/assets/screenshot.png" />
           <meta
             property="og:description"
             content="Junaid Javed portfolio website featuring his best past and recent work."
           />
           <meta property="og:url" content="http://github.com/junaid-home/" />
+          <script src="/lazysizes.min.js" async=""></script>
         </Head>
         <body>
           <Main />

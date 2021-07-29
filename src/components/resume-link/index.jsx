@@ -19,7 +19,7 @@ function ResumeLink({ hoverRight }) {
         >
           <p className="resume-link-content">Resume</p>
           <img
-            className="resume-logo"
+            className="resume-logo lazyload"
             src="/assets/icons/ResumeIcon.svg"
             alt="github-logo"
           />

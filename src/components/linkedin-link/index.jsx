@@ -15,7 +15,7 @@ const LinkedInLink = ({ hoverRight }) => {
       >
         <p className="linkedin-link-content">LinkedIn</p>
         <img
-          className="linkedin-logo"
+          className="linkedin-logo lazyload"
           src="/assets/icons/LinkedinLogo.svg"
           alt="github-logo"
         />

@@ -49,7 +49,7 @@ const HeroSection = () => {
             animate="show"
           >
             <motion.img
-              className="hero-image"
+              className="hero-image lazyload"
               src="/assets/MyPhotoPNG.png"
               alt="Junaid Javed - website owner and creator"
               variants={heroImageAnimations}

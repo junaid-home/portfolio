@@ -34,6 +34,7 @@
       .hero-image {
         object-fit: contain;
         height: 100%;
+        width: max-content;
         z-index: -1;
         margin-bottom: 10rem;
 

@@ -24,15 +24,19 @@ const CustomButton = ({
       <button className={classes} {...otherProps}>
         {eye && (
           <img
+          width="100%"
+          height="100%"
             src="/assets/icons/eyeIcon.svg"
-            className="eye-icon"
+            className="eye-icon lazyload"
             alt="Eye Icon"
           />
         )}
         {code && (
           <img
+          width="100%"
+          height="100%"
             src="/assets/icons/CodeIcon.svg"
-            className="code-icon"
+            className="code-icon lazyload"
             alt="Code Icon"
           />
         )}
@@ -43,15 +47,19 @@ const CustomButton = ({
     <button onClick={onClick} className={classes} {...otherProps}>
       {eye && (
         <img
+        width="100%"
+        height="100%"
           src="/assets/icons/eyeIcon.svg"
-          className="eye-icon"
+          className="eye-icon lazyload"
           alt="Eye Icon"
         />
       )}
       {code && (
         <img
+        width="100%"
+        height="100%"
           src="/assets/icons/CodeIcon.svg"
-          className="code-icon"
+          className="code-icon lazyload"
           alt="Code Icon"
         />
       )}

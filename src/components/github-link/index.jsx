@@ -15,7 +15,7 @@ const GithubLink = ({ hoverRight }) => {
       >
         <p className="github-link-content">Github</p>
         <img
-          className="github-logo"
+          className="github-logo lazyload"
           src="/assets/icons/githubLogo.svg"
           alt="github-logo"
         />
