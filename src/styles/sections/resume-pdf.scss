@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
   width: 100%;
 
   &:last-child {
@@ -55,9 +55,16 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .buttons-contiainer {
+    margin-bottom: 15rem !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .buttons-contiainer {
     flex-direction: column;
+    margin-bottom: 15rem !important;
 
     button {
       width: 90%;

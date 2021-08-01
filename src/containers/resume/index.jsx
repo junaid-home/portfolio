@@ -18,9 +18,11 @@ import {
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumePdf() {
+  const formRef = useRef();
+  const pdfWrapperRef = useRef();
+
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const pdfWrapperRef = useRef();
 
   const handleNextPage = () => {
     if (pageNumber < numPages) {
@@ -72,6 +74,13 @@ function ResumePdf() {
           <div className="buttons-contiainer">
             <Button margin eye text="Prev Page" onClick={handlePrevPage} />
             <Button margin eye text="Next Page" onClick={handleNextPage} />
+            <Button
+              margin
+              download
+              primary
+              text="Download"
+              onClick={() => formRef.current.submit()}
+            />
           </div>
         </div>
         <div className={style.fixedLinksProjectsPage}>
@@ -79,6 +88,7 @@ function ResumePdf() {
           <LinkedInLink hoverRight variants={leftLinksAnimations} />
           <ResumeLink hoverRight variants={leftLinksAnimations} />
         </div>
+        <form ref={formRef} method="get" action="/assets/resume.pdf"></form>
       </motion.section>
     </React.Fragment>
   );

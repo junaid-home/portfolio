@@ -20,9 +20,6 @@ const Footer = ({ backgroundSecondary }) => (
         <NavLink footer to="/contact">
           Contact
         </NavLink>
-        <NavLink footer to="/resume">
-          Resume
-        </NavLink>
       </ul>
       <div className="contact-details">
         <p>Junaid Javed</p>

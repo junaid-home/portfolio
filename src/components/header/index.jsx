@@ -27,7 +27,6 @@ const Header = ({ backgroundSecondary, backgroundPrimary }) => {
           <NavLink to="/about-me">About Me</NavLink>
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
         </ul>
       </menu>
       <BurgerMenuButton setshowLinks={setShowLinks} showLinks={showLinks} />

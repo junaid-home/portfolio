@@ -6,6 +6,8 @@ const CustomButton = ({
   isLink,
   LinkTo,
   margin,
+  download,
+  primary,
   onClick = () => {},
   ...otherProps
 }) => {
@@ -24,8 +26,8 @@ const CustomButton = ({
       <button className={classes} {...otherProps}>
         {eye && (
           <img
-          width="100%"
-          height="100%"
+            width="100%"
+            height="100%"
             src="/assets/icons/eyeIcon.svg"
             className="eye-icon lazyload"
             alt="Eye Icon"
@@ -33,9 +35,18 @@ const CustomButton = ({
         )}
         {code && (
           <img
-          width="100%"
-          height="100%"
+            width="100%"
+            height="100%"
             src="/assets/icons/CodeIcon.svg"
+            className="code-icon lazyload"
+            alt="Code Icon"
+          />
+        )}
+        {download && (
+          <img
+            width="100%"
+            height="100%"
+            src="/assets/icons/download.svg"
             className="code-icon lazyload"
             alt="Code Icon"
           />
@@ -44,11 +55,16 @@ const CustomButton = ({
       </button>
     </a>
   ) : (
-    <button onClick={onClick} className={classes} {...otherProps}>
+    <button
+      onClick={onClick}
+      style={primary && { background: "#f64c72" }}
+      className={classes}
+      {...otherProps}
+    >
       {eye && (
         <img
-        width="100%"
-        height="100%"
+          width="100%"
+          height="100%"
           src="/assets/icons/eyeIcon.svg"
           className="eye-icon lazyload"
           alt="Eye Icon"
@@ -56,9 +72,18 @@ const CustomButton = ({
       )}
       {code && (
         <img
-        width="100%"
-        height="100%"
+          width="100%"
+          height="100%"
           src="/assets/icons/CodeIcon.svg"
+          className="code-icon lazyload"
+          alt="Code Icon"
+        />
+      )}
+      {download && (
+        <img
+          width="100%"
+          height="100%"
+          src="/assets/icons/download.svg"
           className="code-icon lazyload"
           alt="Code Icon"
         />

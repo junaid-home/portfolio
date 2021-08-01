@@ -1,15 +1,9 @@
-import { useRef } from "react";
+import Link from "next/link";
 
 function ResumeLink({ hoverRight }) {
-  const formRef = useRef();
-
-  const handleLinkClick = () => {
-    formRef.current.submit();
-  };
-
   return (
-    <form ref={formRef} method="get" action="/assets/resume.pdf">
-      <a onClick={handleLinkClick} className="resume-link-wrapper">
+    <Link href="/resume" passHref>
+      <a className="resume-link-wrapper">
         <div
           className={`${
             hoverRight
@@ -25,7 +19,7 @@ function ResumeLink({ hoverRight }) {
           />
         </div>
       </a>
-    </form>
+    </Link>
   );
 }
 export default ResumeLink;
