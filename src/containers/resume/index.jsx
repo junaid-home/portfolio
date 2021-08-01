@@ -52,8 +52,8 @@ function ResumePdf() {
         <div className="pdf-container" ref={pdfWrapperRef}>
           <div className="info-section">
             <p>
-              Page <span style={{ color: "#fec576" }}>{pageNumber}</span> of{" "}
-              <span style={{ color: "#fec576" }}>{numPages}</span>
+              Page <span style={{ color: "#f64c72" }}>{pageNumber}</span> of{" "}
+              <span style={{ color: "#f64c72" }}>{numPages}</span>
             </p>
           </div>
           <Document
