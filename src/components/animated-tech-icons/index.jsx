@@ -17,6 +17,16 @@ const CloudIcon = "/assets/icons/cloud.svg";
 const NoSqlIcon = "/assets/icons/nosql.svg";
 const SqlIcon = "/assets/icons/sql.jpeg";
 const NodejsIcon = "/assets/icons/nodejs.svg";
+const WebRTCIcon = "/assets/icons/webrtc.svg";
+const WebpackIcon = "/assets/icons/webpack.svg";
+const ReduxIcon = "/assets/icons/redux.svg";
+const ReduxSagaIcon = "/assets/icons/redux-saga.svg";
+const ReactNativeIcon = "/assets/icons/react-native.svg";
+const LinuxIcon = "/assets/icons/linux.svg";
+const JestIcon = "/assets/icons/jest.svg";
+const StyledComponentsIcon = "/assets/icons/styled-components.svg";
+const MaterialUiIcon = "/assets/icons/material-ui.svg";
+const BootstrapIcon = "/assets/icons/bootstrap.svg";
 
 import { techIcons } from "../../animations/framer-animations";
 
@@ -83,7 +93,11 @@ export const AnimatedJavaScriptIcon = () => {
   return (
     <motion.div className="circle-container" variants={techIcons}>
       <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
-      <img src={JavascriptIcon} alt="React Logo" className="icon-inside lazyload" />
+      <img
+        src={JavascriptIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
       <p>JavaScript</p>
     </motion.div>
   );
@@ -123,7 +137,11 @@ export const AnimatedTailwindIcon = () => {
   return (
     <motion.div className="circle-container" variants={techIcons}>
       <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
-      <img src={TailwindIcon} alt="React Logo" className="icon-inside lazyload" />
+      <img
+        src={TailwindIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
       <p>Tailwind</p>
     </motion.div>
   );
@@ -175,6 +193,130 @@ export const AnimatedNoSqljsIcon = () => {
       <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
       <img src={NoSqlIcon} alt="React Logo" className="icon-inside lazyload" />
       <p>No Sql</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedWebRTCIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img src={WebRTCIcon} alt="React Logo" className="icon-inside lazyload" />
+      <p>WebRTC</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedWebpackIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={WebpackIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>Webpack</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedReduxCIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img src={ReduxIcon} alt="React Logo" className="icon-inside lazyload" />
+      <p>Redux</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedReduxSagaCIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={ReduxSagaIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>Redux Saga</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedReactNativeIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={ReactNativeIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>React.Native</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedLinuxIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img src={LinuxIcon} alt="React Logo" className="icon-inside lazyload" />
+      <p>Linux</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedStyledComponentsIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={StyledComponentsIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>Styled Components</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedJestIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img src={JestIcon} alt="React Logo" className="icon-inside lazyload" />
+      <p>Jest</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedMaterialUiIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={MaterialUiIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>Material.UI</p>
+    </motion.div>
+  );
+};
+
+export const AnimatedBootstrapIcon = () => {
+  return (
+    <motion.div className="circle-container" variants={techIcons}>
+      <img src={CircleThick} alt="Animated Cicle" className="circle lazyload" />
+      <img
+        src={BootstrapIcon}
+        alt="React Logo"
+        className="icon-inside lazyload"
+      />
+      <p>Bootstrap</p>
     </motion.div>
   );
 };

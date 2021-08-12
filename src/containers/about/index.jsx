@@ -14,7 +14,7 @@ import {
   leftLinksAnimations,
 } from "../../animations/framer-animations";
 
-const About = () => {
+const About = ({ minimal }) => {
   return (
     <motion.section
       className={style.projectsPage}
@@ -24,7 +24,7 @@ const About = () => {
       exit="exit"
     >
       <Header backgroundSecondary />
-      <AboutMeSection />
+      <AboutMeSection minimal={minimal} />
       <Footer />
       <div className={style.fixedLinksProjectsPage}>
         <GithubLink hoverRight variants={leftLinksAnimations} />

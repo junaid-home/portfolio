@@ -73,3 +73,17 @@
     }
   }
 }
+
+.view-more {
+  font-size: 1.9rem;
+  margin-top: 8rem;
+  cursor: pointer;
+  color: $secondary-text-color;
+  text-shadow: $primary-text-shadow;
+  margin-left: auto;
+  margin-right: 5rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
