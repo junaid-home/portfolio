@@ -3,7 +3,7 @@ const LinkedInLink = ({ hoverRight }) => {
     <a
       className="linkedin-link-wrapper"
       rel="noreferrer"
-      href="https://www.linkedin.com/"
+      href="https://www.linkedin.com/in/junaid-home/"
       target="_blank"
     >
       <div
@@ -17,7 +17,7 @@ const LinkedInLink = ({ hoverRight }) => {
         <img
           className="linkedin-logo lazyload"
           src="/assets/icons/LinkedinLogo.svg"
-          alt="github-logo"
+          alt="linkden-logo"
         />
       </div>
     </a>
