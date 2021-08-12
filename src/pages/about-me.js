@@ -13,7 +13,7 @@ function About() {
         />
         <meta name="page-subject" content="Portfolio Home" />
       </Head>
-      <AboutMe />
+      <AboutMe minimal={false} />
     </React.Fragment>
   );
 }

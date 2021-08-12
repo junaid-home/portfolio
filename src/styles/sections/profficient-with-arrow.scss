@@ -29,3 +29,10 @@
     left: -8rem;
   }
 }
+
+.large-top-margin {
+  margin-top: 21rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 30rem;
+  }
+}
