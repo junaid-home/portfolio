@@ -1,6 +1,6 @@
 # Personal Portfolio website (React, Next.js, PWA)
 
-![ScreenShot](./public/assets/screenshot.png)
+![ScreenShot](https://junaid-home.github.io/assets/screenshot.png) 
 
 ## Tech Stack
 
